@@ -10,7 +10,7 @@ app = Flask(__name__) # Initialize flask
 # Read model and config file
 config_file = open('config.yaml')
 config = yaml.load(config_file, Loader=yaml.FullLoader)
-posts_reader = open('models/test.json')
+posts_reader = open('models/posts.json')
 posts = json.loads(posts_reader.read())
 
 @app.route("/")
