@@ -10,15 +10,15 @@
         <h1 class="blog_title">This is where you put your blog title.</h1>
     </center>
     <div class="posts">
+        {% for post in posts %}
         <div class="post">
-            {% for post in posts %}
-                <h1 class="title">{{ post.title }}</h1>
-                <p class="by">By {{ post.author }}</p>
-                <p class="content">
-                    {{ post.content }}
-                </p>
-            {% endfor %}
+            <h1 class="title">{{ post.title }}</h1>
+            <p class="by">By {{ post.author }}</p>
+            <p class="content">
+                {{ post.content }}
+            </p>
         </div>
+        {% endfor %}
     </div>
 
 </body>

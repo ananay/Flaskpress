@@ -21,6 +21,10 @@ body {
     font-family: 'Playfair Display';
 }
 
+.post {
+    margin-top: 5%;
+}
+
 .post .title {
     font-size: 36pt;
     font-family: 'Playfair Display';

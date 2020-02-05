@@ -1,17 +1,21 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+#!/usr/bin/env python
 
-posts = [
-    {
-        'author': 'Ananay Arora',
-        'title': 'Hello World',
-        'content': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    }
-]
+# imports
+from flask import Flask, render_template
+import yaml
+import json
+
+app = Flask(__name__) # Initialize flask
+
+# Read model and config file
+config_file = open('config.yaml')
+config = yaml.load(config_file, Loader=yaml.FullLoader)
+posts_reader = open('models/test.json')
+posts = json.loads(posts_reader.read())
 
 @app.route("/")
 def hello():
-    return render_template('index.html', posts=posts)
+    return render_template('index.html', blog_title=config['blog_name'], posts=posts)
 
 if __name__ == '__main__':
     app.run(debug=True)

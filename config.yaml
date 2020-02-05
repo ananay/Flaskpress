@@ -1,0 +1,4 @@
+# Blog config goes in here
+
+blog_name: 'This is where the blog title goes' # Name of the blog config
+spreadsheet_link: '' # Google spreadsheet link
