@@ -1,5 +1,5 @@
 # 🖋 Flaskpress
-Flaskpress is a simple blog created in Flask, with the aim of having a very minimal method of maintainence.
+Flaskpress is a simple blog created in Flask, with the aim of having a very simple and minimal method of maintainence.
 
 ---
 
