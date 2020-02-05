@@ -27,4 +27,4 @@ Make a fork of the repository if you're going to contribute to it, then submit a
 
 ---
 
-Made with <3 by [Ananay Arora](https://ananayarora.com)
+Made with ❤️ by [Ananay Arora](https://ananayarora.com)
