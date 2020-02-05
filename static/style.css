@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue';
+}
+
+body {
+    background: #ededed;
+}
+
+.post {
+    background: #fff;
+    padding: 5%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.04);
+}
+
+.blog_title {
+    margin-top: 100px;
+    font-family: 'Playfair Display';
+}
+
+.post .title {
+    font-size: 36pt;
+    font-family: 'Playfair Display';
+    letter-spacing: 2px;
+}
+
+.post .by {
+    color: #888;
+    font-size: 16pt;
+    margin-top: 20px;
+}
+
+.post .content {
+    margin-top: 40px;
+    line-height: 1.8em;
+    font-size: 14pt;
+    text-align: justify;
+}
+
+.posts {
+    margin: 10%;
+    margin-top: 60px;
+}
